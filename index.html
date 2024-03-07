@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MeteoApp</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+    <div class="hero">
+        <nav id="navbar">
+            <h2 class="logo">MeteoApp</h2>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Contact Us</a></li>
+                <li><a href="https://openweathermap.org/api">OpenWeather API</a></li>
+            </ul>
+        </nav>
+        
+        <div class="header-titles">
+            <h1 id="home-title"><span style="color: black;">MYMETEO</span> LIVE</h1>
+            <h3 id="home-subtitle">Weather at your fingertips !</h3>
+        </div>
+    </div>
+    
+    <h2 style="text-align: center; margin-top: 20px; font-weight: 400;">Live Updates !</h2>
+    <h3 style="text-align: center; margin-top: 10px; font-weight: 400;">Insert your city below for info .</h3>
+    <!-- CARD -->
+    <div class="card">
+        
+        <div class="search">
+            <input type="text" placeholder="enter city name" spellcheck="false">
+            <button>Search
+                <!-- <img src="" alt=""> -->
+            </button>
+        </div>
+        <div class="error">
+            <p>Invalid City Name</p>
+        </div>
+        
+        <div class="weather">
+            <img class="weather-icon" src="./images/clouds.png" alt="">
+            <h1 class="temp">22 °C</h1>
+            <h2 class="city">New York</h2>
+            
+            
+            <!-- DETAILS -->
+            <div class="details">
+                <!-- HUMIDITY -->
+                <div class="col">
+                    <img src="./images/humidity.png" alt="">
+                    <div class="">
+                        <p class="humidity">50%</p>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+                <!-- WIND -->
+                <div class="col">
+                    <img src="./images/wind.png" alt="">
+                    <div class="">
+                        <p class="wind">15 Km/H</p>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+    
+    <!-- FOLLOW US SECTION -->
+    <div class="follow-us">
+        <div class="follow-us-titles">
+            <h2>Follow Us !</h2>
+            <h3>You can find us everywhere </h3>
+        </div>
+        
+        <div class="follow-us-icons">
+            <a href=""><img src="./images/facebook.png" alt=""></a>
+            <a href=""><img src="./images/instagram.png" alt=""></a>
+            <a href=""><img src="./images/linkedin.png" alt=""></a>
+        </div>
+    </div>        
+    
+    <!-- FOOTER -->
+    <footer class="footer">
+        
+        <div class="footer-links">
+            <a href="">Home</a>
+            <a href="">About</a>
+            <a href="">Contact Us</a>
+        </div>
+        
+        <div id="central-footer" class="footer-links">
+            <a href="">Termini di servizio</a>
+            <a href="">Privacy Policies</a>
+            <p style="color: white; margin-top: 10px;"><span>© 2024 MyMeteoApp. All rights reserved.</span></p>
+        </div>
+        
+        <div class="img-footer">
+            <img src="./images/logo_white_cropped_openweather.png" alt="">
+        </div>
+        
+    </footer>
+    
+    
+    
+    
+    <!-- main.js -->
+    <script src="./main.js"></script>
+</body>
+</html>

@@ -1,0 +1,320 @@
+/* FONT */
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
+
+.quicksand {
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .cinzel {
+    font-family: "Cinzel", serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+  }
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand' !important;
+}
+.hero{
+    height: 100vh;
+    width: 100%;
+    background-image: url(./images/tincho-franco-AksmkMQTdik-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    box-shadow: rgba(0, 0, 0, 0.55) 0px 5px 15px;
+    position: relative;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 45px 8%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+.logo{
+    color: white;
+    font-size: 35px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.logo:hover{
+    color: black;
+    font-size: 35px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 25px;
+}
+nav ul li a{
+text-decoration: none;
+color: #fff;
+font-weight: 600;
+text-transform: capitalize;
+}
+nav ul li a:hover{
+    color: black;
+    font-weight: 600;
+    text-transform: capitalize;
+    }
+.title{
+    color: #fff;
+    font-family: "Cinzel" !important;
+    font-size: 80px;
+}
+.header-titles{
+position: absolute;
+transform: translate(-50% , -50%);
+text-align: center;
+top: 50%;
+left: 50%;
+}
+.header-titles h1{
+    color: white;
+    font-weight: 300;
+    font-size: 100px;
+    padding-top: 30px;
+    cursor: default ;
+}
+.header-titles h3{
+    color: rgb(255, 254, 254);
+    font-weight: 400;
+    font-size: 40px;
+    padding-top: 20px;
+    cursor: default;
+}
+.card{
+    /* position: absolute; */
+    width: 90%;
+    max-width: 470px;
+    /* background: linear-gradient(130deg, #3a37cb, #e3cb73); */
+    background: url(./images/sunset-2205553_1280.jpg);
+    color: #fff;
+    margin: 30px auto 0;
+    border-radius: 20px;
+    padding: 40px 35px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.55) 0px 5px 15px;
+}
+.search{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.search input{
+    border: 0;
+    outline: 0;
+    background-color: #ebfffc;
+    color: #555;
+    padding: 10px 25px ;
+    height: 60px;
+    border-radius: 30px;
+    flex: 1;
+    margin-right: 16px;
+    font-size: 18px;
+    transition: 0.2s;
+
+}
+.search input:hover{
+    transform: scale(1.02);
+    border: 1px solid rgba(0, 0, 0, 0.767);
+    transition: 0.2s;
+}
+
+.search button {
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.search button:hover{
+    transform: scale(1.2);
+    background-color: black;
+    color: white;
+    transition: 0.2s;
+}
+
+.weather-icon{
+    width: 100px;
+    height: 100px;
+    margin-top: 30px;
+}
+
+.weather{
+    display: none;
+    opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.weather h1{
+    font-size: 80px;
+    font-weight: 500;
+}
+
+.weather h2{
+    font-size: 45px;
+    font-weight: 400;
+    margin-top: -10px;
+}
+
+.details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-top: 50px;
+}
+
+.details img{
+    width: 50px;
+    height: 50px;
+}
+
+.col{
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.col img{
+    width: 40px;
+    margin-right: 10px;
+}
+
+.humidity, .wind {
+  font-size: 20px;
+}
+
+.error p{
+    text-align: left;
+    margin: 10px 20px ;
+}
+.follow-us{
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.follow-us h2{
+    font-weight: 500 ;
+}
+.follow-us h3{
+    margin-top: 5px;
+    margin-bottom: 20px;
+    
+    font-weight: 400 ;
+}
+.follow-us-icons img{
+    width: 25px;
+    height: 25px;
+    margin: 10px;
+    transition: ease-out 0.2s;
+}
+.follow-us-icons img:hover{
+    transform: scale(1.2);
+    transition: ease-out 0.2s;
+}
+.img-footer img{
+    width: 150px;
+    height: 60px;
+    margin-top: -10px;
+}
+.footer{
+    height: 150px;
+    width: 100%;
+    /* background: url(./images/sunset-2205553_1280.jpg) no-repeat; */
+    /* background-color: grey; */
+    background-size: cover;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px 0 30px;
+    text-align: center;
+    background-color: rgba(146, 66, 9, 0.638);
+    box-shadow: rgba(0, 0, 0, 0.55) 0px 5px 15px;
+
+}
+.footer div{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+}
+#central-footer{
+    padding: 0 70px 0 70px;
+    position: relative;
+    left: 30px;
+}
+.footer div a {
+    text-decoration: none;
+    color: white;
+    transition: 0.2s;
+}
+.footer div a:hover {
+    /* text-decoration: none; */
+    color: black;
+    transition: 0.2s;
+}
+.img-footer{
+    text-align: end !important;
+    padding-top: -10px;
+}
+
+
+@media screen and (max-width: 600px) {
+.title{
+    text-align: center;
+    white-space: normal;
+    overflow-wrap: break-word;
+    overflow: hidden;
+}
+}
+
+@media screen and (max-width: 708px) {
+    nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding: 45px 8%;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        transition: backdrop-filter 0.3s ease;
+    }
+    nav ul li a{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    @media screen and (max-width: 540px){
+        #central-footer p{
+            /* white-space: nowrap; */
+            display: none;
+        }
+    }
+}
+
+
+
